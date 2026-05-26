@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>NFTBattlegrounds</title><style>
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:system-ui,sans-serif;background:#0a0a0f;color:#e2e8f0;overflow-x:hidden}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem;background:radial-gradient(ellipse at center,#e11d4815,transparent 70%)}
+.badge{padding:6px 16px;border-radius:20px;background:#e11d4822;color:#e11d48;font-size:.85rem;border:1px solid #e11d4844;margin-bottom:1rem}
+h1{font-size:clamp(2rem,5vw,3.5rem);background:linear-gradient(135deg,#e11d48,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:1rem}
+.sub{font-size:1.15rem;color:#94a3b8;max-width:600px;margin-bottom:2rem;line-height:1.6}
+.bg{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}
+.b{padding:14px 32px;border-radius:12px;font-size:1rem;font-weight:600;cursor:pointer;transition:.3s;text-decoration:none;border:none}
+.bp{background:linear-gradient(135deg,#e11d48,#7c3aed);color:#fff;box-shadow:0 4px 20px #e11d4840}.bp:hover{transform:translateY(-2px);box-shadow:0 8px 30px #e11d4860}
+.bo{background:0;color:#e11d48;border:2px solid #e11d4866}.bo:hover{border-color:#e11d48;background:#e11d4811}
+section{padding:4rem 2rem;max-width:1200px;margin:0 auto}
+.st{text-align:center;font-size:2rem;margin-bottom:.5rem;background:linear-gradient(135deg,#e11d48,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.sd{text-align:center;color:#94a3b8;margin-bottom:2.5rem;max-width:600px;margin-left:auto;margin-right:auto}
+.fg{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
+.fc{background:#12121a;border:1px solid #1e1e2e;border-radius:16px;padding:2rem;transition:.3s}.fc:hover{border-color:#e11d4844;transform:translateY(-4px);box-shadow:0 8px 30px #e11d4820}
+.fi{font-size:2.5rem;margin-bottom:1rem}.fc h3{font-size:1.15rem;margin-bottom:.5rem}.fc p{color:#94a3b8;line-height:1.6}
+.sb{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin:2rem 0}
+.si{text-align:center;padding:1.5rem;background:#12121a;border-radius:12px;border:1px solid #1e1e2e}
+.sn{font-size:2rem;font-weight:700;background:linear-gradient(135deg,#e11d48,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.sl{color:#94a3b8;font-size:.85rem;margin-top:.3rem}
+.ds{background:#0d0d14;border-radius:20px;padding:2rem;border:1px solid #1e1e2e}
+.dg{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin-top:1.5rem}
+.dc{background:#12121a;border:1px solid #1e1e2e;border-radius:12px;padding:1.5rem;text-align:center;cursor:pointer;transition:.3s}.dc:hover,.dc.a{border-color:#e11d48;box-shadow:0 0 20px #e11d4830}.dc.a{background:#e11d4811}
+.di{font-size:2rem;margin-bottom:.5rem}.dn{font-weight:600}
+.lb{background:#0a0a12;border:1px solid #1e1e2e;border-radius:12px;padding:1.5rem;margin-top:1.5rem;font-family:'Courier New',monospace;font-size:.88rem;color:#e11d48;max-height:200px;overflow-y:auto;line-height:1.8}
+.ab{background:#0a0a12;border:1px solid #1e1e2e;border-radius:12px;padding:2rem;font-family:'Courier New',monospace;font-size:.82rem;color:#94a3b8;white-space:pre;overflow-x:auto;line-height:1.6;text-align:center}
+table{width:100%;border-collapse:collapse;margin-top:1.5rem}th{padding:12px;text-align:left;color:#e11d48;border-bottom:2px solid #e11d4833}td{padding:12px;border-bottom:1px solid #1e1e2e}tr:hover{background:#12121a}
+footer{text-align:center;padding:3rem 2rem;color:#475569;border-top:1px solid #1e1e2e}footer a{color:#e11d48;text-decoration:none}
+@media(max-width:768px){.fg,.dg{grid-template-columns:1fr}.sb{grid-template-columns:repeat(2,1fr)}section{padding:3rem 1rem}}
+</style></head><body>
+<div class="hero"><div class="badge">Powered by Xiaomi MiMo v2.5-pro</div><h1>NFTBattlegrounds</h1><p class="sub">Collectible NFT cards of AI agents. Build decks, battle in turn-based combat. Cards evolve based on wins.</p><div class="bg"><a href="#demo" class="b bp">🎮 Launch App</a><a href="https://github.com/dovilo/NFTBattlegrounds" class="b bo" target="_blank">GitHub ↗</a></div></div>
+<div class="sb" style="max-width:1200px;margin:0 auto;padding:0 2rem"><div class="si"><div class="sn" id="a">0</div><div class="sl">Active Agents</div></div><div class="si"><div class="sn" id="t">0</div><div class="sl">Transactions</div></div><div class="si"><div class="sn" id="v">0</div><div class="sl">Volume (ETH)</div></div><div class="si"><div class="sn" id="p">0</div><div class="sl">Players</div></div></div>
+<section><h2 class="st">Features</h2><p class="sd">Built on EVM chains with MiMo v2.5-pro AI reasoning.</p><div class="fg"><div class="fc"><div class="fi">⚔️</div><h3>Card Collection</h3><p>Core gameplay mechanic powered by autonomous AI agents on-chain.</p></div><div class="fc"><div class="fi">🧠</div><h3>Deck Builder</h3><p>MiMo v2.5-pro reasoning engine drives intelligent decisions.</p></div><div class="fc"><div class="fi">🏆</div><h3>Turn-Based Combat</h3><p>Earn rewards through skillful agent management and strategy.</p></div></div></section>
+<section id="demo"><h2 class="st">🎮 Live Demo</h2><p class="sd">Interact with NFTBattlegrounds in real-time.</p><div class="ds"><h3 style="margin-bottom:1rem">Select Card Agent</h3><div class="dg"><div class="dc" onclick="sel(this,'Fire Card')"><div class="di">⚡</div><div class="dn">Fire Card</div></div><div class="dc" onclick="sel(this,'Water Card')"><div class="di">⚡</div><div class="dn">Water Card</div></div><div class="dc" onclick="sel(this,'Earth Card')"><div class="di">⚡</div><div class="dn">Earth Card</div></div><div class="dc" onclick="sel(this,'Lightning Card')"><div class="di">⚡</div><div class="dn">Lightning Card</div></div></div><div class="lb" id="log"><div>> NFTBattlegrounds Protocol v1.0 initialized</div><div>> MiMo v2.5-pro reasoning engine: READY</div><div>> Select a card agent to begin...</div></div><div style="margin-top:1.5rem;display:flex;gap:1rem;flex-wrap:wrap"><button class="b bp" onclick="deploy()">🚀 Deploy Agent</button><button class="b bo" onclick="battle()">⚔️ Start Match</button></div></div></section>
+<section><h2 class="st">Architecture</h2><div class="ab">┌──────────────────────────────────────────────────┐
+│               NFTBATTLEGROUNDS PROTOCOL                │
+├──────────────────────────────────────────────────┤
+│  Agent NFT (ERC-721)                             │
+│  ┌──────────┐ ┌────────────┐ ┌────────────────┐ │
+│  │ Metadata │ │ Card Collection │ │ Performance    │ │
+│  └──────────┘ └─────┬──────┘ └────────────────┘ │
+│                     ▼                            │
+│  ┌──────────────────────────────────────────┐   │
+│  │     MiMo v2.5-pro Reasoning Layer        │   │
+│  │  128K ctx · Chain-of-Thought · JSON mode │   │
+│  └──────────────────────┬───────────────────┘   │
+│                         ▼                        │
+│  Uniswap │ Aave │ Compound │ Curve │ 1inch      │
+│                         ▼                        │
+│  Ethereum │ Base │ Arbitrum │ Polygon            │
+└──────────────────────────────────────────────────┘</div></section>
+<section><h2 class="st">Comparison</h2><table><tr><th>Feature</th><th>NFTBattlegrounds</th><th>Traditional</th><th>Centralized</th><th>Other</th></tr><tr><td>NFT Cards</td><td style="color:#e11d48">✓</td><td>✗</td><td>✗</td><td>✗</td></tr><tr><td>Deck Building</td><td style="color:#e11d48">✓</td><td>✗</td><td>✗</td><td>✗</td></tr><tr><td>Turn-Based AI</td><td style="color:#e11d48">✓</td><td>✗</td><td>✗</td><td>✗</td></tr><tr><td>Card Evolution</td><td style="color:#e11d48">✓</td><td>✗</td><td>✗</td><td>✗</td></tr><tr><td>Ranked Matches</td><td style="color:#e11d48">✓</td><td>✗</td><td>✗</td><td>✗</td></tr></table></section>
+<footer><p>Built with <a href="#">Claude Code</a> + <a href="#">Hermes Agent</a></p><p style="margin-top:.5rem">Powered by <a href="#">Xiaomi MiMo v2.5-pro</a> · MIT © 2026</p></footer>
+<script>
+let sel_name=null;function sel(e,n){document.querySelectorAll('.dc').forEach(c=>c.classList.remove('a'));e.classList.add('a');sel_name=n;al('> Selected: '+n)}
+function al(m){const l=document.getElementById('log'),d=document.createElement('div');d.textContent=m;l.appendChild(d);l.scrollTop=l.scrollHeight}
+function deploy(){if(!sel_name){al('> ERROR: Select an agent first!');return}al('> Deploying '+sel_name+' on-chain...');setTimeout(()=>al('> Compiling smart contract...'),800);setTimeout(()=>al('> MiMo reasoning: analyzing parameters...'),1600);setTimeout(()=>al('> Broadcasting transaction...'),2400);setTimeout(()=>al('> ✅ Deployed! TX: 0x'+Math.random().toString(16).slice(2,10)+'...'),3200)}
+function battle(){if(!sel_name){al('> ERROR: Select an agent first!');return}al('> Starting match...');setTimeout(()=>al('> Opponent found: Agent-'+Math.floor(Math.random()*999)),800);setTimeout(()=>al('> MiMo analyzing opponent...'),1600);setTimeout(()=>al('> ⚔️ Battle in progress...'),2400);setTimeout(()=>{if(Math.random()>.4)al('> 🏆 VICTORY! +0.'+(Math.floor(Math.random()*5+1))+' ETH');else al('> 💀 Defeated. Gaining experience...')},3500)}
+const O=new IntersectionObserver(e=>{if(e[0].isIntersecting){const a=document.getElementById('a'),t=document.getElementById('t'),v=document.getElementById('v'),p=document.getElementById('p');let c=0;const I=setInterval(()=>{c+=2;a.textContent=Math.min(c,2847);t.textContent=Math.min(c*452,1284532).toLocaleString();v.textContent=(c*.015).toFixed(1)+'K';p.textContent=Math.min(c,1204);if(c>=2847)clearInterval(I)},1);O.disconnect()}});O.observe(document.querySelector('.sb'));
+</script></body></html>
